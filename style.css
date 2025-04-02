@@ -217,3 +217,53 @@ footer {
     font-size: 2em;
     cursor: pointer;
 }
+
+/* Blog Section */
+.blog {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.blog-post .post-date {
+    font-size: 1em;
+    color: #777;
+}
+
+.blog-post .btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-top: 15px;
+}
