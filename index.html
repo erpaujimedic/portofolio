@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Zainnn</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Selamat datang di Portofolio Zainnn</h1>
-        <p>Saya adalah mahasiswa Teknik Industri yang tertarik di bidang akuntansi, manajemen, dan desain visual.</p>
-    </header>
 
-    <section>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="#">Zainnn</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Selamat datang di Portofolio Zainnn</h1>
+            <p>Saya mahasiswa Teknik Industri dengan keahlian di Akuntansi, Manajemen, dan Desain Visual.</p>
+            <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
         <h2>Tentang Saya</h2>
-        <p>Ini tempat untuk menjelaskan sedikit tentang diri kamu, seperti pengalaman dan keahlian.</p>
+        <p>Saya memiliki pengalaman di berbagai proyek industri, terutama dalam mengelola data dan desain yang mendukung keputusan bisnis yang efektif.</p>
+        <p>Keahlian saya meliputi:</p>
+        <ul>
+            <li>Akuntansi dan analisis keuangan</li>
+            <li>Manajemen proyek dan pengelolaan tim</li>
+            <li>Desain visual untuk presentasi dan produk</li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Proyek</h2>
-        <p>Berikut adalah beberapa proyek yang saya kerjakan:</p>
-        <!-- Kamu bisa menambahkan detail proyek di sini -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portofolio Saya</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Proyek 1: Desain Kemasan Produk</h3>
+                <p>Desain kemasan untuk produk makanan dan minuman yang menarik dan fungsional.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyek 2: Analisis Keuangan</h3>
+                <p>Melakukan analisis laporan keuangan untuk mendukung keputusan bisnis strategis.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyek 3: Manajemen Proyek</h3>
+                <p>Mengelola tim dalam proyek besar untuk menyelesaikan pekerjaan dengan efisien dan tepat waktu.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <p>Jika Anda ingin bekerja sama atau menghubungi saya, kirim pesan melalui email:</p>
+        <a href="mailto:email@domain.com" class="btn">Kirim Pesan</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Kontak: email@domain.com</p>
+        <p>&copy; 2025 Zainnn. Semua hak cipta dilindungi.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
