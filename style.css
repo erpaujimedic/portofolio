@@ -267,3 +267,79 @@ footer {
     border-radius: 5px;
     margin-top: 15px;
 }
+
+/* Timeline Section */
+.timeline {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.timeline h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item .timeline-content {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: scale(1.05);
+}
+
+.timeline-item h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.timeline-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Line Connecting Timeline Items */
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+/* Add a circle to each timeline item */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 10;
+}
