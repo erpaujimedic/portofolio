@@ -26,3 +26,18 @@ projectCards.forEach(card => {
         });
     });
 });
+
+// Menambahkan animasi scroll untuk timeline
+window.addEventListener('scroll', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const windowHeight = window.innerHeight;
+
+    timelineItems.forEach(item => {
+        const itemPosition = item.getBoundingClientRect().top;
+
+        if (itemPosition < windowHeight - 150) {
+            item.querySelector('.timeline-content').classList.add('active');
+        }
+    });
+});
+
