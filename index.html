@@ -17,6 +17,7 @@
             <li><a href="#home">Beranda</a></li>
             <li><a href="#about">Tentang Saya</a></li>
             <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Kontak</a></li>
         </ul>
     </nav>
@@ -42,94 +43,71 @@
         </ul>
     </section>
 
-    <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio">
-    <h2>Portofolio Saya</h2>
-    <div class="projects">
-        <div class="project-card">
-            <img src="image1.jpg" alt="Project 1">
-            <div class="project-info">
-                <h3>Proyek 1: Penanganan Kegawatdaruratan</h3>
-                <p>Dokumentasi kegiatan penanganan kegawatdaruratan di lapangan.</p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="image2.jpg" alt="Project 2">
-            <div class="project-info">
-                <h3>Proyek 2: Manajemen Tim Medis</h3>
-                <p>Foto kegiatan tim medis dalam menangani pasien dalam situasi darurat.</p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="image3.jpg" alt="Project 3">
-            <div class="project-info">
-                <h3>Proyek 3: Kolaborasi dengan Tim Kesehatan</h3>
-                <p>Kerja sama dengan tim kesehatan dalam situasi bencana atau darurat.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <h2>Kontak Saya</h2>
-    <p>Untuk informasi lebih lanjut atau untuk bekerja sama, silakan hubungi saya melalui salah satu kontak di bawah:</p>
-    <ul class="contact-list">
-        <li><a href="mailto:erpauji.medic@gmail.com">Email: erpauji.medic@gmail.com</a></li>
-        <li><a href="https://wa.me/085888181119">WhatsApp: 085888181119</a></li>
-        <li><a href="https://www.linkedin.com/in/eepridwanpauji">LinkedIn: Eep Ridwan Pauji</a></li>
-    </ul>
-</section>
-
     <!-- Blog Section -->
-<section id="blog" class="blog">
-    <h2>Blog Saya</h2>
-    <div class="blog-post">
-        <h3>Artikel Terbaru: Pengalaman di Lapangan</h3>
-        <p class="post-date">1 April 2025</p>
-        <p>Saya ingin berbagi pengalaman saya saat menangani situasi medis yang sangat mendesak di lapangan...</p>
-        <a href="#more" class="btn">Baca Selengkapnya</a>
-    </div>
+    <section id="blog" class="blog">
+        <h2>Blog Saya</h2>
+        <div class="blog-post">
+            <h3>Artikel Terbaru: Pengalaman di Lapangan</h3>
+            <p class="post-date">1 April 2025</p>
+            <p id="excerpt-1">Saya ingin berbagi pengalaman saya saat menangani situasi medis yang sangat mendesak di lapangan...</p>
+            <div id="full-text-1" style="display:none;">
+                <p>Ini adalah bagian lengkap dari artikel tentang pengalaman di lapangan yang lebih mendalam. Cerita penuh dari situasi medis ini melibatkan pertolongan pertama dan koordinasi tim yang luar biasa...</p>
+            </div>
+            <button class="btn" onclick="toggleContent(1)">Baca Selengkapnya</button>
+        </div>
 
-    <!-- Blog Archive (Lebih banyak artikel bisa ditambah di sini) -->
-    <div class="blog-post">
-        <h3>Artikel Sebelumnya: Manajemen Tim Medis</h3>
-        <p class="post-date">15 Maret 2025</p>
-        <p>Artikel ini membahas pentingnya kerja sama tim medis dalam menghadapi situasi darurat...</p>
-        <a href="#more" class="btn">Baca Selengkapnya</a>
-    </div>
-</section>
+        <div class="blog-post">
+            <h3>Artikel Sebelumnya: Manajemen Tim Medis</h3>
+            <p class="post-date">15 Maret 2025</p>
+            <p id="excerpt-2">Artikel ini membahas pentingnya kerja sama tim medis dalam menghadapi situasi darurat...</p>
+            <div id="full-text-2" style="display:none;">
+                <p>Di artikel ini, saya menjelaskan bagaimana tim medis dapat bekerja sama dengan lebih efektif untuk menangani pasien dalam kondisi darurat...</p>
+            </div>
+            <button class="btn" onclick="toggleContent(2)">Baca Selengkapnya</button>
+        </div>
+    </section>
 
-<!-- Timeline Section -->
-<section id="timeline" class="timeline">
-    <h2>Timeline Karir Saya</h2>
-    <div class="timeline-container">
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>2025 - Sertifikasi BTCLS</h3>
-                <p>Saya mendapatkan sertifikasi Basic Trauma and Cardiac Life Support (BTCLS), yang memungkinkan saya untuk memberikan pertolongan pertama dalam situasi darurat.</p>
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>Timeline Karir Saya</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2025 - Sertifikasi BTCLS</h3>
+                    <p>Saya mendapatkan sertifikasi Basic Trauma and Cardiac Life Support (BTCLS), yang memungkinkan saya untuk memberikan pertolongan pertama dalam situasi darurat.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2024 - PPI (Pengendalian Penyakit Infeksi)</h3>
+                    <p>Sertifikasi PPI memberikan keahlian dalam pengendalian infeksi, sangat penting dalam menangani situasi medis yang melibatkan penyakit menular.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2023 - HIPERKES</h3>
+                    <p>Saya memperoleh sertifikasi HIPERKES, yang memberikan pemahaman mendalam mengenai keselamatan dan kesehatan kerja di lingkungan medis.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2022 - Lulus dari Pendidikan Sarjana Keperawatan</h3>
+                    <p>Saya lulus dengan gelar Sarjana Keperawatan dan memulai karir sebagai perawat di rumah sakit, memberikan perawatan langsung kepada pasien.</p>
+                </div>
             </div>
         </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>2024 - PPI (Pengendalian Penyakit Infeksi)</h3>
-                <p>Sertifikasi PPI memberikan keahlian dalam pengendalian infeksi, sangat penting dalam menangani situasi medis yang melibatkan penyakit menular.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>2023 - HIPERKES</h3>
-                <p>Saya memperoleh sertifikasi HIPERKES, yang memberikan pemahaman mendalam mengenai keselamatan dan kesehatan kerja di lingkungan medis.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>2022 - Lulus dari Pendidikan Sarjana Keperawatan</h3>
-                <p>Saya lulus dengan gelar Sarjana Keperawatan dan memulai karir sebagai perawat di rumah sakit, memberikan perawatan langsung kepada pasien.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Kontak Saya</h2>
+        <p>Untuk informasi lebih lanjut atau untuk bekerja sama, silakan hubungi saya melalui salah satu kontak di bawah:</p>
+        <ul class="contact-list">
+            <li><a href="mailto:erpauji.medic@gmail.com">Email: erpauji.medic@gmail.com</a></li>
+            <li><a href="https://wa.me/085888181119">WhatsApp: 085888181119</a></li>
+            <li><a href="https://www.linkedin.com/in/eepridwanpauji">LinkedIn: Eep Ridwan Pauji</a></li>
+        </ul>
+    </section>
 
     <!-- Footer -->
     <footer>
