@@ -1,31 +1,18 @@
-// Efek scroll untuk mengubah warna navbar saat menggulir
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = "#222";
+function toggleContent(id) {
+    const fullText = document.getElementById(`full-text-${id}`);
+    const excerpt = document.getElementById(`excerpt-${id}`);
+    const button = document.querySelector(`#full-text-${id} + .btn`);
+
+    if (fullText.style.display === "none") {
+        fullText.style.display = "block";
+        excerpt.style.display = "none";
+        button.textContent = "Tutup Artikel";
     } else {
-        navbar.style.backgroundColor = "#333";
+        fullText.style.display = "none";
+        excerpt.style.display = "block";
+        button.textContent = "Baca Selengkapnya";
     }
-});
-
-// Lightbox untuk portofolio
-const projectCards = document.querySelectorAll('.project-card img');
-
-projectCards.forEach(card => {
-    card.addEventListener('click', function() {
-        const imgSrc = this.src;
-        const lightbox = document.createElement('div');
-        lightbox.classList.add('lightbox');
-        lightbox.innerHTML = `<img src="${imgSrc}" alt="Project Image"><span class="close">X</span>`;
-        document.body.appendChild(lightbox);
-
-        // Menutup lightbox saat diklik
-        const closeBtn = lightbox.querySelector('.close');
-        closeBtn.addEventListener('click', function() {
-            document.body.removeChild(lightbox);
-        });
-    });
-});
+}
 
 // Menambahkan animasi scroll untuk timeline
 window.addEventListener('scroll', function() {
@@ -40,4 +27,3 @@ window.addEventListener('scroll', function() {
         }
     });
 });
-
