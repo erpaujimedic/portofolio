@@ -7,3 +7,22 @@ window.addEventListener('scroll', function() {
         navbar.style.backgroundColor = "#333";
     }
 });
+
+// Lightbox untuk portofolio
+const projectCards = document.querySelectorAll('.project-card img');
+
+projectCards.forEach(card => {
+    card.addEventListener('click', function() {
+        const imgSrc = this.src;
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('lightbox');
+        lightbox.innerHTML = `<img src="${imgSrc}" alt="Project Image"><span class="close">X</span>`;
+        document.body.appendChild(lightbox);
+
+        // Menutup lightbox saat diklik
+        const closeBtn = lightbox.querySelector('.close');
+        closeBtn.addEventListener('click', function() {
+            document.body.removeChild(lightbox);
+        });
+    });
+});
