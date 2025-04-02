@@ -97,127 +97,6 @@ nav ul li a {
     margin: 10px 0;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-/* Portfolio Section */
-.portfolio {
-    padding: 40px 20px;
-    background-color: #eaeaea;
-    text-align: center;
-}
-
-.portfolio h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    background: white;
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.project-info {
-    margin-top: 15px;
-}
-
-.project-info h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Contact Section */
-.contact {
-    padding: 40px 20px;
-    background-color: white;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-list li {
-    font-size: 1.2em;
-    margin: 15px 0;
-}
-
-.contact-list a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.contact-list a:hover {
-    color: #007bff;
-}
-
-/* Lightbox style */
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.lightbox img {
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-}
-
-.lightbox .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-}
-
 /* Blog Section */
 .blog {
     padding: 40px 20px;
@@ -266,6 +145,7 @@ footer {
     font-size: 1.1em;
     border-radius: 5px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 /* Timeline Section */
@@ -280,7 +160,6 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Timeline Container */
 .timeline-container {
     position: relative;
     max-width: 900px;
@@ -318,7 +197,6 @@ footer {
     color: #555;
 }
 
-/* Line Connecting Timeline Items */
 .timeline-container::before {
     content: "";
     position: absolute;
@@ -330,7 +208,6 @@ footer {
     transform: translateX(-50%);
 }
 
-/* Add a circle to each timeline item */
 .timeline-item::before {
     content: "";
     position: absolute;
@@ -344,12 +221,41 @@ footer {
     z-index: 10;
 }
 
-/* Animasi Fade-in untuk Timeline */
-.timeline-item .timeline-content {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
 }
 
-.timeline-item .timeline-content.active {
-    opacity: 1;
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.contact-list a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-list a:hover {
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
